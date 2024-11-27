@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(70, 105, 91);
+}
+.wrapper-todo {
+  padding: 30px 25px;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  border: 0.1px solid black;
+  padding: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
+.input-valid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 100%;
+  border: 0.1px solid black;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
+  padding: 3px 5px;
+}
+input:focus {
+  box-shadow: 0 0 0 1px pink;
+}
+.hidden {
+  visibility: hidden;
+  color: rgb(215, 144, 144);
+}
+.error-message {
+  visibility: visible;
+  font-size: 16px;
+  color: rgb(215, 144, 144);
+  transition: all 1s ease-in-out;
+}
+.add-todo-btn {
+  font-size: 10px;
+  border-radius: 3px;
+  background: rgb(213, 229, 213);
+  border: none;
+  font-size: 16px;
+}
+
+.todos-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.todos-operation-name {
+  display: flex;
+  gap: 5px;
+}
+.opeartion-name {
+  border: 0.1px solid black;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+}
+.operation-text {
+  font-size: 18px;
+}
+.todos-list {
+  width: 100%;
+}
+.todo {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(138, 138, 151);
+  padding: 20px;
+  border-radius: 13px;
+}
+.todo-text {
+  color: rgb(13, 49, 68);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.btn-wrap {
+  width: 100%;
+  padding: 5px;
+
+  display: flex;
+  justify-content: space-around;
+}
+.btn-wrap + .move-todo-btn {
+  margin: 0 auto;
+}
+
+.move-todo-btn,
+.back-todo-btn {
+  font-size: 10px;
+  border-radius: 3px;
+  background: rgb(157, 162, 151);
+  border: none;
+  cursor: pointer;
+  padding: 5px 17px;
+  color: rgb(2, 86, 92);
+}
+
+.del-todo-btn {
+  background-color: rgb(148, 86, 86);
+  color: black;
+}

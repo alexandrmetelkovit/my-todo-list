@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <title>доска задач</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="wrapper-todo">
+      <div class="container">
+        <div class="form-wrapper">
+          <form class="form" autocomplete="off">
+            <div class="input-valid">
+              <input id="inputTextTodo" type="text" />
+              <span class="hidden" id="errorMessage"></span>
+            </div>
+            <button type="submit" class="add-todo-btn" id="addTodoBtn">
+              добавить
+            </button>
+          </form>
+        </div>
+
+        <div class="todos-inner">
+          <ul class="todos-operation-name">
+            <li class="opeartion-name">
+              <span class="operation-text"> start work! </span>
+
+              <ul id="firstTodoOperation" class="todos-list">
+                <!-- <li class="todo">
+                  <span class="todo-text">${todo.text}</span>
+                  <div class="btn-wrap">
+                    <button class="move-todo-btn" data-index="${index}">
+                      дальше
+                    </button>
+                  </div>
+                </li> -->
+              </ul>
+            </li>
+            <li class="opeartion-name">
+              <span class="operation-text"> worked! </span>
+
+              <ul id="secondTodoOperation" class="todos-list"></ul>
+            </li>
+            <li class="opeartion-name">
+              <span class="operation-text"> end! </span>
+
+              <ul id="thirdTodoOperation" class="todos-list"></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js//index.js"></script>
+  </body>
+</html>
